@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 4rem;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: white;
+}
+
+:root {
+    --bg-color: rgba(52, 52, 52, 255);
+    --orange: #fd4312;
+}
+
+.intro-left {
+    padding-bottom: 1rem;
+    width: 60%;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    font-weight: bold;
+
+}
+
+
+.myName p {
+    width: 1rem;
+    padding-left: 6px;
+    font-size: 4rem;
+}
+
+.Usman {
+    color: #FDB63C;
+}
+
+.Ahmad {
+    color: var(--orange);
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 1rem;
+}
+
+.avatar {
+    width: 16rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.info {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 1rem;
+}
+
+.contact-button {
+    color: white;
+    font-weight: bold;
+    background-color: var(--orange);
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 15px;
+    transition: .5s;
+}
+
+.socials img {
+    width: 2rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d75f3d;
+
+}
+
+.socials a img:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media(max-width:800px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-left {
+        width: unset;
+    }
+}
+
+.triangleA {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: var(--orange);
+    width: 1rem;
+    height: 1rem;
+}
+
+.triangleB {
+    background-color: var(--orange);
+    width: 1rem;
+    height: 1rem;
+    clip-path: polygon(100% 0, 0 0, 0 98%);
+}
+
+.myGoalDiv {
+    margin-top: 1rem;
+    display: flex;
+    gap: 8px;
+}
+
+.myGoal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.myGoalDiv p {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.iam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 3rem;
+}
+
+.iAm {
+    color: white;
+    font-size: 2rem;
+}
+
+.contentBox {
+    background: var(--bg-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+    width: 20rem;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+.orangeBox {
+    background: var(--orange);
+    position: absolute;
+    top: 0rem;
+    bottom: 0rem;
+    z-index: -1;
+    width: 20rem;
+    padding: 4rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.boxesDiv {
+    position: relative;
+
+}
+
+.boxesDiv:hover .child:first-child {
+    transform: rotate(12deg);
+}
+
+.boxesDiv {
+    width: 19rem;
+}
+
+.ThreeBoxes {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ThreeBoxes p {
+    color: white;
+}
+
+@media(max-width:1110px) {
+    .ThreeBoxes {
+        flex-direction: column;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        gap: 2.3rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 1rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.about-images img {
+    width: 16rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+
+
+.aboutContent {
+    width: 40rem;
+    background: var(--bg-color);
+    color: white;
+    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    transition: .5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.aboutContent:hover {
+    box-shadow: 0px 0px 33px 2px #ffffffc8;
+
+}
+
+.aboutContent h1 {
+    font-size: 2rem;
+}
+
+
+.cvButton {
+    color: white;
+    font-weight: bold;
+    background-color: var(--orange);
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 15px;
+    margin-top: 1rem;
+    transition: .5s;
+}
+
+.cvButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d75f3d;
+}
+
+@media(max-width:1110px) {
+    .about-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .aboutContent {
+        width: unset;
+
+    }
+
+}
+
+.skills-desc {
+    background: var(--bg-color);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    color: white;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    width: 45%;
+    transition: .5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.skills-desc:hover{
+    box-shadow: 0px 0px 33px 2px #f4f4f4c8;
+
+}
+
+.containerSkills {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 2rem;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.mySkills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.html {
+    width: 90%;
+    background-color: var(--orange);
+    border-radius: 2rem;
+    height: 31px;
+}
+
+.css {
+    width: 80%;
+    background-color: var(--orange);
+    border-radius: 2rem;
+    height: 31px;
+}
+
+.js {
+    width: 65%;
+    background-color:var(--orange);
+    border-radius: 2rem;
+    height: 31px;
+}
+
+
+
+
+
+
+/* text animation */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .static-txt {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: var(--orange);
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+/* text animation */
+
+.skillBar {
+    width: 50%;
+}
+
+
+@media(max-width:970px) {
+    .mySkills {
+        flex-direction: column;
+    }
+
+    .skillBar {
+        width: 95%;
+    }
+
+    .skills-desc {
+        width: unset;
+    }
+}
+
+
+.portfolio- ,.myGoalDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.portfolio img{
+    width: 25rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+@media(max-width:1270px){
+    .projects {
+        flex-direction: column;
+    }
+
+    .projects img{
+        width: 90%;
+    }
+}
+
+
+.projects{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.projectA{
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+ 
+}
+
+.services-section{
+    margin-top: 5rem;
+}
